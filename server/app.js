@@ -44,6 +44,11 @@ app.get("/", (req, res) => {
 app.use(require('./controllers'));
 
 // Start Server
-app.listen(process.env.PORT, () => {
-    console.log(`Leetcode API listening on port ${process.env.PORT}!`);
+app.listen(port, () => {
+    console.log(`Server listening on port ${port}`);
 });
+
+//Connect to mongoDB
+const dbConnectionUri =  env["DB_CONNECTION_STRING"] || "mongodb://localhost:27017/SWE-";
+console.log(`Connecting to MongoDB at ${dbConnectionUri}`);
+connectDB(dbConnectionUri);
