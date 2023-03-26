@@ -9,22 +9,20 @@ const eventSchema = new mongoose.Schema({
     description: {
         type: String,
         required: true,
-        default: ""
+        default: "No description available"
     },
     code: {
         type: Number,
         required: true
     },
     registered: {
-      type: [mongoose.Schema.Types.ObjectId],
-      ref: userModel,
-      default: [],
-      required: true
+        type: [mongoose.Schema.Types.ObjectId],
+        ref: "user",
+        required: true
     },
     attendees: {
         type: [mongoose.Schema.Types.ObjectId],
-        ref: userModel,
-        default: [],
+        ref: "user",
         required: true
     },
     startTime: {

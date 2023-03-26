@@ -10,6 +10,10 @@ const app = express();
 const bodyParser = require('body-parser');
 const router = express.Router();
 
+// Add Controller objects
+const AuthController = require("./controllers/AuthenticationController");
+const UserController = require("./controllers/UserController");
+
 // Set up env variables
 
 const path = require("path");
@@ -23,6 +27,7 @@ if (!env) {
 const port = process.env.PORT || env["PORT"] || 3000;
 
 // Add models
+const {roleModel } = require("./models/Role");
 const { userModel } = require("./models/User");
 const { eventModel } = require("./models/Event");
 
@@ -41,8 +46,7 @@ app.get("/", (req, res) => {
 });
 
 // Load routes
-app.use(require('./controllers'));
-
+app.post("/addEvent", )
 // Start Server
 app.listen(port, () => {
     console.log(`Server listening on port ${port}`);

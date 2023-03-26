@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BookWorm</title>
+    <title>SWE Attendance</title>
 
     <!-- Favicon Section -->
     <link rel="apple-touch-icon" sizes="180x180" href="public/icon/apple-touch-icon.png">
@@ -17,9 +17,9 @@
     <!-- Favicon Section -->
 
     <!-- Linked CSS -->
-    <link rel="stylesheet" href="./css/base.css" />
-    <link rel="stylesheet" href="./css/font-awesome.css" />
-    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="stylesheet" href="../../client/css/base.css" />
+    <link rel="stylesheet" href="../../client/css/home.css" />
+    <link rel="stylesheet" href="../../client/css/main.css" />
     <!-- Linked CSS -->
 
     <!-- Linked JS -->
@@ -28,13 +28,13 @@
     <!-- Linked JS -->
 </head>
 <body class="bg-dark">
-<header>
+<!--<header>
     <div class="container bg-dark">
         <nav class="navbar navbar-expand-md navbar-dark bg-dark d-flex">
             <a class="navbar-brand" href="#">
                 <div class="logo-content d-flex align-items-center">
                     <img src="./public/swe_logo.png" alt="SWE Logo" class="logo" />
-                    <span class="logo-content__text navbar-text d-inline-block m-auto">Bookworm</span>
+                    <span class="logo-content__text navbar-text d-inline-block m-auto">SWE Attendance</span>
                 </div>
             </a>
             <button
@@ -61,10 +61,9 @@
                             Dropdown
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="signup.html">Signup</a>
+                            <a class="dropdown-item" href="login.html">Login</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
                         </div>
                     </li>
                     <li class="nav-item">
@@ -74,69 +73,31 @@
             </div>
         </nav>
     </div>
-</header>
+</header>-->
 <main class="min-vh-100 text-bg-dark">
+    <h2>Welcome to the SWE Attendance tracker! </h2>
     <div class="container text-light">
         <div class="row mb-4">
             <div class="col-12">
                 <div class="card" id="login-card">
-                    <h2 class="card-title text-center text-bg-light py-3">Login</h2>
-                    <div class="card-body">
-                        <form novalidate action="" class="text-bg-light">
-                            <div class="form-floating pb-3">
-                                <input type="email" class="form-control" id="login_email" placeholder="your email here"/>
-                                <label for="login_email" class="form-label" required>Email</label>
-                                <div class="invalid-feedback">Please enter a valid email</div>
-                                <div class="valid-feedback">Email is valid</div>
-                            </div>
-                            <div class="form-floating pb-3">
-                                <input type="password" class="form-control" id="login_password" placeholder="your password here"/>
-                                <label for="login_password" class="form-label" required>Password</label>
-                                <div class="invalid-feedback">Password incorrect</div>
-                            </div>
-                            <div class="d-flex">
-                                <a href="#signup-card" class="btn-link d-inline-block">Don't have an account?</a>
-                                <a href="#" class="btn-link d-inline-block ms-auto">Forgot password?</a>
-                            </div>
-                            <button type="submit" class="btn btn-primary d-inline-block mt-2 hcenter-transform">Submit</button>
-                        </form>
-                    </div>
+                    <a href="login.html">
+                        <h2 class="card-title text-center text-bg-light py-3">Returning member? Login</h2>
+                    </a>
                 </div>
             </div>
         </div>
         <div class="row mb-4">
             <div class="col-12">
                 <div class="card" id="signup-card">
-                    <h2 class="card-title text-center text-bg-light py-3">Sign Up</h2>
-                    <div class="card-body">
-                        <form novalidate action="" class="text-bg-light">
-                            <div class="form-floating pb-3">
-                                <input type="text" class="form-control" id="signup_name" placeholder="your name here"/>
-                                <label for="signup_name" class="form-label" required>First Name: </label>
-                                <div class="invalid-feedback">Please enter a valid email</div>
-                                <div class="valid-feedback">Email is valid</div>
-                            </div>
-                            <div class="form-floating pb-3">
-                                <input type="text" class="form-control" id="signup_netid" placeholder="netID"/>
-                                <label for="signup_netid" class="form-label" required>netID</label>
-                            </div>
-                            <div class="form-floating pb-3">
-                                <input type="text" class="form-control" id="signup_graduationyear" placeholder="Class year"/>
-                                <label for="signup_graduationyear" class="form-label" required>Graduation year</label>
-                            </div>
-                            <div class="form-floating pb-3">
-                                <input type="text" class="form-control" id="signup_major" placeholder="Enter your major"/>
-                                <label for="signup_major" class="form-label" required>netID</label>
-                            </div>
-                            <button type="submit" class="btn btn-primary d-inline-block mt-2 hcenter-transform">Submit</button>
-                        </form>
-                    </div>
+                    <a href="signup.html">
+                        <h2 class="card-title text-center text-bg-light py-3">New member? Sign Up</h2>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
 </main>
-<footer>
+<!--<footer>
     <div class="container text-light">
         <div class="row">
             <div class="col-12">
@@ -144,6 +105,6 @@
             </div>
         </div>
     </div>
-</footer>
+</footer>-->
 </body>
 </html>
